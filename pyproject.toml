@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "solana-trend-predictor"
+version = "0.1.0"
+description = "A machine learning system for predicting SOL price trends"
+requires-python = ">=3.8"
+dependencies = [
+    "lightgbm>=4.0.0",
+    "pandas>=2.0.0",
+    "numpy>=1.17.0",
+    "scikit-learn>=1.0.0"
+]
+
+[tool.setuptools]
+packages = ["src"] 
